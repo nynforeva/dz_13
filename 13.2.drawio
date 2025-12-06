@@ -1,9 +1,74 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:145.0) Gecko/20100101 Firefox/145.0" version="29.2.4">
   <diagram name="Страница-1" id="SaxvChYLuVs_byRQz4KR">
-    <mxGraphModel>
+    <mxGraphModel dx="2733" dy="1897" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="VqpNn-Wa3xmph6vedMXi-2" parent="1" style="ellipse;fillColor=strokeColor;" value="" vertex="1">
+          <mxGeometry height="14" width="14" x="417" y="318" as="geometry" />
+        </mxCell>
+        <mxCell id="VqpNn-Wa3xmph6vedMXi-3" parent="1" style="rounded=1;arcSize=20;strokeWidth=2" value="Idle" vertex="1">
+          <mxGeometry height="40" width="43" x="402" y="382" as="geometry" />
+        </mxCell>
+        <mxCell id="VqpNn-Wa3xmph6vedMXi-4" parent="1" style="rounded=1;arcSize=20;strokeWidth=2" value="WaitingForMoney" vertex="1">
+          <mxGeometry height="40" width="138" x="355" y="496" as="geometry" />
+        </mxCell>
+        <mxCell id="VqpNn-Wa3xmph6vedMXi-5" parent="1" style="rounded=1;arcSize=20;strokeWidth=2" value="MoneyReceived" vertex="1">
+          <mxGeometry height="40" width="125" x="276" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="VqpNn-Wa3xmph6vedMXi-6" parent="1" style="rounded=1;arcSize=20;strokeWidth=2" value="TicketDispensed" vertex="1">
+          <mxGeometry height="40" width="132" x="200" y="724" as="geometry" />
+        </mxCell>
+        <mxCell id="VqpNn-Wa3xmph6vedMXi-7" parent="1" style="rounded=1;arcSize=20;strokeWidth=2" value="TransactionCanceled" vertex="1">
+          <mxGeometry height="40" width="164" x="441" y="724" as="geometry" />
+        </mxCell>
+        <mxCell id="VqpNn-Wa3xmph6vedMXi-8" parent="1" style="ellipse;shape=endState;fillColor=strokeColor;" value="" vertex="1">
+          <mxGeometry height="14" width="14" x="259" y="838" as="geometry" />
+        </mxCell>
+        <mxCell id="VqpNn-Wa3xmph6vedMXi-9" edge="1" parent="1" source="VqpNn-Wa3xmph6vedMXi-2" style="curved=1;startArrow=none;;exitX=0.49;exitY=1;entryX=0.51;entryY=0;rounded=0;" target="VqpNn-Wa3xmph6vedMXi-3" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VqpNn-Wa3xmph6vedMXi-10" edge="1" parent="1" source="VqpNn-Wa3xmph6vedMXi-3" style="curved=1;startArrow=none;;exitX=0.51;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="VqpNn-Wa3xmph6vedMXi-4" value="Выбор билета">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VqpNn-Wa3xmph6vedMXi-11" edge="1" parent="1" source="VqpNn-Wa3xmph6vedMXi-4" style="curved=1;startArrow=none;;exitX=0.28;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="VqpNn-Wa3xmph6vedMXi-5" value="Внесение суммы">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="339" y="573" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VqpNn-Wa3xmph6vedMXi-12" edge="1" parent="1" source="VqpNn-Wa3xmph6vedMXi-5" style="curved=1;startArrow=none;;exitX=0.3;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="VqpNn-Wa3xmph6vedMXi-6" value="Выдача билета">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="266" y="687" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VqpNn-Wa3xmph6vedMXi-13" edge="1" parent="1" source="VqpNn-Wa3xmph6vedMXi-4" style="curved=1;startArrow=none;;exitX=0.87;exitY=1;entryX=0.6;entryY=0;rounded=0;" target="VqpNn-Wa3xmph6vedMXi-7" value="Отмена транзакции">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="569" y="573" />
+              <mxPoint x="569" y="687" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VqpNn-Wa3xmph6vedMXi-14" edge="1" parent="1" source="VqpNn-Wa3xmph6vedMXi-5" style="curved=1;startArrow=none;;exitX=0.78;exitY=1;entryX=0.32;entryY=0;rounded=0;" target="VqpNn-Wa3xmph6vedMXi-7" value="Отмена транзакции">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="438" y="687" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VqpNn-Wa3xmph6vedMXi-15" edge="1" parent="1" source="VqpNn-Wa3xmph6vedMXi-6" style="curved=1;startArrow=none;;exitX=0.5;exitY=1;entryX=0.46;entryY=0;rounded=0;" target="VqpNn-Wa3xmph6vedMXi-8" value="Завершение процесса">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
